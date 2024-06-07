@@ -236,7 +236,7 @@ func SetExNx(key string, val interface{}, timeout int) (reply interface{}, err e
 	return reply, err
 }
 
-func initRedis(jsonStr string) {
+func InitRedis(jsonStr string) {
 	// hecos.LoadConfigPlus("common", "redis", &rConfig)
 
 	// Unmarshal the JSON data into the structure

@@ -2,7 +2,7 @@
  * @Author       : Symphony zhangleping@cezhiqiu.com
  * @Date         : 2022-11-19 23:50:11
  * @LastEditors  : Symphony zhangleping@cezhiqiu.com
- * @LastEditTime : 2024-05-27 17:06:09
+ * @LastEditTime : 2024-05-28 02:35:19
  * @FilePath     : /v2/go-common-v2-dh-redis/redis_test.go
  * @Description  :
  *
@@ -36,7 +36,7 @@ func TestGet(t *testing.T) {
         "db": 6,
         "prefix": "redis-test"
     }`
-	initRedis(jsonStr)
+	InitRedis(jsonStr)
 	for i := 0; i < 10; i++ {
 		c := GetConn()
 		defer c.Close()
